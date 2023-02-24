@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Edu</title>
+    <!-- Favicon icon -->
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon.png">
+
+    <link href="vendor/fullcalendar/css/fullcalendar.min.css" rel="stylesheet">
+    	<link href="vendor/bootstrap-select/dist/css/bootstrap-select.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<!--*******************
+        Preloader start
+    ********************-->
+    <div id="preloader">
+        <div class="sk-three-bounce">
+            <div class="sk-child sk-bounce1"></div>
+            <div class="sk-child sk-bounce2"></div>
+            <div class="sk-child sk-bounce3"></div>
+        </div>
+    </div>
+    <!--*******************
+        Preloader end
+    ********************-->
+
+
+    <!--**********************************
+        Main wrapper start
+    ***********************************-->
+    <div id="main-wrapper">
+
+        <!--**********************************
+            Nav header start
+        ***********************************-->
+        <div class="nav-header">
+            <a href="index.html" class="brand-logo">
+                <img class="logo-compact" src="images/logo-text-white.png" alt="">
+                <img class="brand-title" src="images/logo-text-white.png" alt="">
+            </a>
+
+            <div class="nav-control">
+                <div class="hamburger">
+                    <span class="line"></span><span class="line"></span><span class="line"></span>
+                </div>
+            </div>
+        </div>
+        <!--**********************************
+            Nav header end
+        ***********************************-->
+
+        <!--**********************************
+            Header start
+        ***********************************-->
+        <div class="header">
+            <div class="header-content">
+                <nav class="navbar navbar-expand">
+                    <div class="collapse navbar-collapse justify-content-between">
+                        <div class="header-left">
+                            <div class="search_bar dropdown">
+                                <span class="search_icon p-3 c-pointer" data-toggle="dropdown">
+                                    <i class="mdi mdi-magnify"></i>
+                                </span>
+                                <div class="dropdown-menu p-0 m-0">
+                                    <form>
+                                        <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+
+                        <ul class="navbar-nav header-right">
+                            <li class="nav-item dropdown notification_dropdown">
+                                <a class="nav-link bell ai-icon" href="#" role="button" data-toggle="dropdown">
+                                    <svg id="icon-user" xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell">
+										<path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path>
+										<path d="M13.73 21a2 2 0 0 1-3.46 0"></path>
+									</svg>
+                                    <div class="pulse-css"></div>
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <ul class="list-unstyled">
+                                        <li class="media dropdown-item">
+                                            <span class="success"><i class="ti-user"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>Khanh Do</strong> has added a <strong>students</strong> Successfully
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="primary"><i class="ti-shopping-cart"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>Duy</strong> had sent a messenger.</p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="danger"><i class="ti-bookmark"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>Minh</strong> marked a <strong>ticket</strong> as unsolved.
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="primary"><i class="ti-heart"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong>Chien</strong> purchased Light Dashboard 1.0.</p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                        <li class="media dropdown-item">
+                                            <span class="success"><i class="ti-image"></i></span>
+                                            <div class="media-body">
+                                                <a href="#">
+                                                    <p><strong> Nam</strong> has added a<strong>students</strong> Successfully
+                                                    </p>
+                                                </a>
+                                            </div>
+                                            <span class="notify-time">3:20 am</span>
+                                        </li>
+                                    </ul>
+                                    <a class="all-notification" href="#">See all notifications <i class="ti-arrow-right"></i></a>
+                                </div>
+                            </li>
+                            <li class="nav-item dropdown header-profile">
+                                <a class="nav-link" href="#" role="button" data-toggle="dropdown">
+                                    <img src="images/profile/education/pic1.jpg" width="20" alt="">
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a href="app-profile.html" class="dropdown-item ai-icon">
+                                        <svg id="icon-user1" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                                        <span class="ml-2">Profile </span>
+                                    </a>
+                                    <a href="email-inbox.html" class="dropdown-item ai-icon">
+                                        <svg id="icon-inbox" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-mail"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                                        <span class="ml-2">Inbox </span>
+                                    </a>
+                                    <a href="page-login.html" class="dropdown-item ai-icon">
+                                        <svg id="icon-logout" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewbox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg>
+                                        <span class="ml-2">Logout </span>
+                                    </a>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!--**********************************
+            Header end ti-comment-alt
+        ***********************************-->
+
+        <!--**********************************
+            Sidebar start
+        ***********************************-->
+        <div class="dlabnav">
+            <div class="dlabnav-scroll">
+                <ul class="metismenu" id="menu">
+                    <li class="nav-label first">Main Menu</li>
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
+							<i class="la la-home"></i>
+							<span class="nav-text">Dashboard</span>
+						</a>
+                        <ul aria-expanded="false">
+                            <li><a href="index.html">Dashboard</a></li>
+                        </ul>
+                    </li>
+					<li><a class="ai-icon" href="event-management.html" aria-expanded="false">
+							<i class="la la-calendar"></i>
+							<span class="nav-text">Event Management</span>
+						</a>
+                    </li>
+					<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
+							<i class="la la-user"></i>
+							<span class="nav-text">Professors</span>
+						</a>
+                        <ul aria-expanded="false">
+                            <li><a href="all-professors.html">All Professor</a></li>
+                            <li><a href="add-professor.html">Add Professor</a></li>
+                            <li><a href="edit-professor.html">Edit Professor</a></li>
+                            <li><a href="professor-profile.html">Professor Profile</a></li>
+                        </ul>
+                    </li>
+					<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
+							<i class="la la-users"></i>
+							<span class="nav-text">Students</span>
+						</a>
+                        <ul aria-expanded="false">
+                            <li><a href="all-students.html">All Students</a></li>
+                            <li><a href="add-student.html">Add Students</a></li>
+                            <li><a href="edit-student.html">Edit Students</a></li>
+                            <li><a href="about-student.html">About Students</a></li>
+                        </ul>
+                    </li>
+					<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
+							<i class="la la-graduation-cap"></i>
+							<span class="nav-text">Courses</span>
+						</a>
+                        <ul aria-expanded="false">
+                            <li><a href="all-courses.html">All Courses</a></li>
+                            <li><a href="add-courses.html">Add Courses</a></li>
+                            <li><a href="edit-courses.html">Edit Courses</a></li>
+                            <li><a href="about-courses.html">About Courses</a></li>
+                        </ul>
+                    </li>
+					<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
+							<i class="la la-book"></i>
+							<span class="nav-text">Library</span>
+						</a>
+                        <ul aria-expanded="false">
+                            <li><a href="all-library.html">All Library</a></li>
+                            <li><a href="add-library.html">Add Library</a></li>
+                            <li><a href="edit-library.html">Edit Library</a></li>
+                        </ul>
+                    </li>
+					
+					<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
+							<i class="la la-users"></i>
+							<span class="nav-text">Staff</span>
+						</a>
+                        <ul aria-expanded="false">
+                            <li><a href="all-staff.html">All Staff</a></li>
+                            <li><a href="add-staff.html">Add Staff</a></li>
+                            <li><a href="edit-staff.html">Edit Staff</a></li>
+                            <li><a href="staff-profile.html">Staff Profile</a></li>
+                        </ul>
+                    </li>
+					<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
+							<i class="la la-gift"></i>
+							<span class="nav-text">Holiday</span>
+						</a>
+                        <ul aria-expanded="false">
+                            <li><a href="all-holiday.html">All Holiday</a></li>
+                            <li><a href="add-holiday.html">Add Holiday</a></li>
+                            <li><a href="edit-holiday.html">Edit Holiday</a></li>
+                            <li><a href="holiday-calendar.html">Holiday Calendar</a></li>
+                        </ul>
+                    </li>
+					<li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
+							<i class="la la-dollar"></i>
+							<span class="nav-text">Fees</span>
+						</a>
+                        <ul aria-expanded="false">
+                            <li><a href="fees-collection.html">Fees Collection</a></li>
+                            <li><a href="add-fees.html">Add Fees</a></li>
+                            <li><a href="fees-receipt.html">Fees Receipt</a></li>
+                        </ul>
+                    </li>					
+                    <li class="nav-label">Apps</li>
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
+							<i class="la la-users"></i>
+							<span class="nav-text">Apps</span>
+						</a>
+                        <ul aria-expanded="false">
+                            <li><a href="app-profile.html">Profile</a></li>
+                            <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Email</a>
+                                <ul aria-expanded="false">
+                                    <li><a href="email-compose.html">Compose</a></li>
+                                    <li><a href="email-inbox.html">Inbox</a></li>
+                                    <li><a href="email-read.html">Read</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="app-calender.html">Calendar</a></li>
+                            <li><a href="app-chat.html">Chat</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-label">Components</li>
+                    <li><a href="widget-basic.html" aria-expanded="false">
+							<i class="la la-desktop"></i>
+							<span class="nav-text">Widget</span>
+						</a></li>
+                    <li class="nav-label">Table</li>
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
+							<i class="la la-table"></i>
+							<span class="nav-text">Table</span>
+						</a>
+                        <ul aria-expanded="false">
+                            <li><a href="table-datatable-basic.html">Datatable</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-label">Extra</li>
+                    <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">
+							<i class="la la-th-list"></i>
+							<span class="nav-text">Pages</span>
+						</a>
+                        <ul aria-expanded="false">
+                            <li><a href="page-register.html">Register</a></li>
+                            <li><a href="page-login.html">Login</a></li>
+                            <li><a class="has-arrow" href="javascript:void()" aria-expanded="false">Error</a>
+                                <ul aria-expanded="false">
+                                    <li><a href="page-error-400.html">Error 400</a></li>
+                                    <li><a href="page-error-403.html">Error 403</a></li>
+                                    <li><a href="page-error-404.html">Error 404</a></li>
+                                    <li><a href="page-error-500.html">Error 500</a></li>
+                                    <li><a href="page-error-503.html">Error 503</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="page-lock-screen.html">Lock Screen</a></li>
+                        </ul>
+                    </li>
+				</ul>
+            </div>
+        </div>
+        <!--**********************************
+            Sidebar end
+        ***********************************-->
+
+        <!--**********************************
+            Content body start
+        ***********************************-->
+        <div class="content-body">
+            <div class="container-fluid">
+                <div class="row page-titles mx-0">
+                    <div class="col-sm-6 p-md-0">
+                        <div class="welcome-text">
+                            <h4>Hi, welcome back!</h4>
+                        </div>
+                    </div>
+                    <div class="col-sm-6 p-md-0 justify-content-sm-end mt-2 mt-sm-0 d-flex">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item"><a href="javascript:void(0)">App</a></li>
+                            <li class="breadcrumb-item active"><a href="javascript:void(0)">Comunities</a></li>
+                        </ol>
+                    </div>
+                </div>
+                
+                <div class="container">
+                    <div class="appLayout-103">
+                        <div class="qaAppLayoutRow flex-108">
+                            <div class="os-viewport os-viewport-scrollbar-hidden" style="margin-right: 0px; margin-bottom: 0px; margin-left: 0px; top: 0px; right: auto; left: 0px; width: calc(100% + 0px); padding: 0px; overflow-y: scroll;">
+                                <div class="flex-110">
+                                    <div class="flex-803">
+                                        <div class="flex-113">
+                                            <div class="flexItem-114">
+                                                <div style="height: 100%;">
+                                                    <div class="mainAreaRowContent-804">
+                                                        <div class="flex-805">
+                                                            <div class="flexItem-806" role="main">
+                                                                <h2 class="semanticHeading-128">
+                                                                    <div class="block-642">
+                                                                        <span class="text-390">Discover communities</span>
+                                                                    </div>
+                                                                </h2>
+                                                                <div class="flex-644">
+                                                                    <div class="flex-645">
+                                                                        <div>
+                                                                            <div role="tablist" class="root-646" data-focuszone-id="FocusZone339">
+                                                                                <button type="button" role="tab" aria-selected="true" id="Pivot338-Tab0" class="linkIsSelected-656" name="Recommended" data-content="Recommended" data-is-focusable="true" tabindex="0" data-is-overflowing="false">
+                                                                                    <span class="flexContainer-657" data-automationid="splitbuttonprimary">
+                                                                                        <span class="iconContainerWrapper-664">
+                                                                                            <span class="linkContent-652">
+                                                                                                <span class="ms-Pivot-text text-653">Recommended</span>
+                                                                                            </span>
+                                                                                        </span>
+                                                                                    </span>
+                                                                                </button>
+                                                                                <button type="button" role="tab" aria-selected="false" id="Pivot338-Tab1" class="link-666" name="All" data-content="All" data-is-focusable="true" tabindex="-1" data-is-overflowing="false">
+                                                                                    <span class="flexContainer-657" data-automationid="splitbuttonprimary">
+                                                                                        <span class="iconContainerWrapper-664">
+                                                                                            <span class="linkContent-652">
+                                                                                                <span class="ms-Pivot-text text-653">All</span>
+                                                                                            </span>
+                                                                                        </span>
+                                                                                    </span>
+                                                                                </button>
+                                                                                <button type="button" class="overflowMenuButton-667" aria-label="More items" data-is-focusable="true" aria-expanded="false" aria-haspopup="true" tabindex="-1">
+                                                                                    <span class="flexContainer-657" data-automationid="splitbuttonprimary">
+                                                                                        <i data-icon-name="More" aria-hidden="true" class="menuIcon-660" style="font-family: FabricMDL2Icons; color: inherit;"></i>
+                                                                                    </span>
+                                                                                </button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="block-304">
+                                                                        <button class="link-98" type="button">
+                                                                            <span class="y-fakeLink">
+                                                                                <div class="fixedGridRow-305">
+                                                                                    <div class="y-fixedGridColumn fixedGridColumn-217">
+                                                                                        <span class="y-fakeLink noUnderline">
+                                                                                            <svg viewBox="0 0 240 240" class="icon-172" aria-hidden="true" focusable="false" style="height: 14px; width: 14px;">
+                                                                                                <path d="M120 20c55.228 0 100 44.772 100 100s-44.772 100-100 100S20 175.228 20 120 64.772 20 120 20zm0 50a7.502 7.502 0 00-7.432 6.482L112.5 77.5v35h-35a7.5 7.5 0 00-1.018 14.932l1.018.068h35v35a7.5 7.5 0 0014.932 1.018l.068-1.018v-35h35a7.5 7.5 0 001.018-14.932l-1.018-.068h-35v-35A7.5 7.5 0 00120 70z"></path>
+                                                                                            </svg>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                    <div class="y-fixedGridColumn fixedGridColumn-217">
+                                                                                        <span class="text-306">
+                                                                                            <span class="y-fakeLink">Create a community</span>
+                                                                                        </span>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </span>
+                                                                        </button>
+                                                                    </div>
+                                                                </div>
+                                                                <ul class="gridList-756">
+                                                                    <li class="y-gridListItem">
+                                                                        <div>
+                                                                            <div>
+                                                                                <div class="dismissableEntityCard-671">
+                                                                                    <div class="entityCard-673">
+                                                                                        <div class>
+                                                                                            <div>
+                                                                                                <div class="isFocused-166">
+                                                                                                    <div class="body-677">
+                                                                                                        <a class="link-199" href="/main/org/husteduvn.onmicrosoft.com/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiI4MDMxNjU3OTg0MCJ9">
+                                                                                                            <div class="entityCardHeader-678">
+                                                                                                                <div class="overlayContentWrapper-681">
+                                                                                                                    <div class="avatarWrapper-669">
+                                                                                                                        <div class="groupAvatar-356">
+                                                                                                                            <div class="avatar-380" aria-hidden="false">
+                                                                                                                                <div role="presentation" class="coin-152">
+                                                                                                                                    <div role="presentation" class="imageArea-382">
+                                                                                                                                        <div class="image-388" style="width: 72px; height: 72px;">
+                                                                                                                                            <img class="ms-Image-image is-loaded ms-Image-image--cover ms-Image-image--portrait is-fadeIn image-159" src="https://sep.hust.edu.vn/wp-content/uploads/Logo-Head.png" alt>
+                                                                                                                                        </div>
+                                                                                                                                    </div>
+                                                                                                                                </div>
+                                                                                                                                <span style="display: block; padding: 0px; border: 0px; clip: rect(0px, 0px, 0px, 0px); position: absolute; margin: -1px; height: 1px; width: 1px; overflow: hidden; overflow-wrap: normal;">Viện vật lý kĩ thuật</span>
+                                                                                                                            </div>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div class="body-684">
+                                                                                                                <div class="block-642">
+                                                                                                                    <div class="inner-164">
+                                                                                                                        <span class="text-390">
+                                                                                                                            <span class="text-337">
+                                                                                                                                <span class="flexContainer-359">
+                                                                                                                                    <span class="groupName-358">Viện Vật lý Kỹ thuật</span>
+                                                                                                                                </span>
+                                                                                                                            </span>
+                                                                                                                        </span>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        <div class="actions-675">
+                                                                                            <div>
+                                                                                                <button type="button" class="baseButton-368" aria-label="Join community Viện Vật lý Kỹ thuật" data-is-focusable="true">
+                                                                                                    <span class="ms-Button-flexContainer" data-automationid="splitbuttonprimary">
+                                                                                                        <div class="content-370">
+                                                                                                            <span class="iconWrapper-366">
+                                                                                                                <svg viewBox="0 0 240 240"  class="icon-172" aria-hidden="true" focusable="false">
+                                                                                                                    <path d="M120 20c55.228 0 100 44.772 100 100s-44.772 100-100 100S20 175.228 20 120 64.772 20 120 20zm0 50a7.502 7.502 0 00-7.432 6.482L112.5 77.5v35h-35a7.5 7.5 0 00-1.018 14.932l1.018.068h35v35a7.5 7.5 0 0014.932 1.018l.068-1.018v-35h35a7.5 7.5 0 001.018-14.932l-1.018-.068h-35v-35A7.5 7.5 0 00120 70z"></path>
+                                                                                                                </svg>
+                                                                                                            </span>
+                                                                                                            "Join community"
+                                                                                                            <div class="secondaryText-367">
+                                                                                                                <span class="iconWrapper-366">
+                                                                                                                    <svg viewBox="0 0 240 240" class="icon-172" aria-hidden="true" focusable="false">
+                                                                                                                        <path d="M120 20c55.228 0 100 44.772 100 100s-44.772 100-100 100S20 175.228 20 120 64.772 20 120 20zm0 50a7.502 7.502 0 00-7.432 6.482L112.5 77.5v35h-35a7.5 7.5 0 00-1.018 14.932l1.018.068h35v35a7.5 7.5 0 0014.932 1.018l.068-1.018v-35h35a7.5 7.5 0 001.018-14.932l-1.018-.068h-35v-35A7.5 7.5 0 00120 70z"></path>
+                                                                                                                    </svg>
+                                                                                                                </span>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </span>
+                                                                                                </button>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <button class="qaDismissButton dismissButton-15" aria-label="Remove Viện Vật lý Kỹ thuật recommendation" type="button">
+                                                                                        <i data-icon-name="Cancel" aria-hidden="true" class="icon-36"></i>
+                                                                                    </button>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                                <ul class="gridList-825">
+                                                                    <li class="y-gridListItem">
+                                                                        <div>
+                                                                            <div>
+                                                                                <div class="dismissableEntityCard-712">
+                                                                                    <div class="entityCard-326">
+                                                                                        <div class>
+                                                                                            <div>
+                                                                                                <div class="isFocused-170">
+                                                                                                    <div class="body-748">
+                                                                                                        <a class="link-203" href="/main/org/husteduvn.onmicrosoft.com/groups/eyJfdHlwZSI6Ikdyb3VwIiwiaWQiOiIxMDM5Mzc5ODI0NjQifQ">
+                                                                                                            <div class="entityCardHeader-749">
+                                                                                                                <div class="overlayContentWrapper-334">
+                                                                                                                    <div class="avatarWrapper-710">
+                                                                                                                        <div class="groupAvatar-482">
+                                                                                                                            <div class="avatar-750" aria-hidden="false">
+                                                                                                                                <div role="presentation" class="ms-Persona-coin ms-Persona--size56 coin-156">
+                                                                                                                                    <div role="presentation" class="ms-Persona-imageArea imageArea-752">
+                                                                                                                                        <div class="ms-Persona-initials initials-755">
+                                                                                                                                            <span>K</span>
+                                                                                                                                        </div>
+                                                                                                                                    </div>
+                                                                                                                                    <span style="display: block; padding: 0px; border: 0px; clip: rect(0px, 0px, 0px, 0px); position: absolute; margin: -1px; height: 1px; width: 1px; overflow: hidden; overflow-wrap: normal;">
+                                                                                                                                        Khoa Cơ điện tử - Trường Cơ khí
+                                                                                                                                    </span>
+                                                                                                                                </div>
+                                                                                                                            </div>
+                                                                                                                        </div>                                         
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                            <div class="body-342">
+                                                                                                                <div class="y-block block-403" title="Khoa Cơ điện tử - Trường Cơ khí">
+                                                                                                                    <div class="inner-168">
+                                                                                                                        <div class="text-322">
+                                                                                                                            <span class="text-407">
+                                                                                                                                <span class="flexContainer-485" dir="auto">
+                                                                                                                                    <span class="groupName-484">Khoa Cơ điện tử - Trường Cơ khí</span>
+                                                                                                                                </span>
+                                                                                                                            </span>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                                <div class="y-block block-344">
+                                                                                                                    <div class="inner-345">
+                                                                                                                        <div class="y-block block-94">
+                                                                                                                            <span class="text-322">95</span>
+                                                                                                                            members
+                                                                                                                            <div class="ms-Stack css-723">
+                                                                                                                                <div class="ms-StackItem css-724">
+                                                                                                                                    <span aria-hidden="true">
+                                                                                                                                        <ul class="layoutList-171">
+                                                                                                                                            <li class="y-layoutList--item item-725">
+                                                                                                                                                <div class="avatar-726">
+                                                                                                                                                    <div role="presentation" class="ms-Persona-coin ms-Persona--size24 coin-156">
+                                                                                                                                                        <div role="presentation" class="ms-Persona-imageArea imageArea-728">
+                                                                                                                                                            <div class="ms-Persona-initials initials-758" aria-hidden="true">
+                                                                                                                                                                <span>N</span>
+                                                                                                                                                            </div>
+                                                                                                                                                            <div class="ms-Image ms-Persona-image image-732" style="width: 24px; height: 24px;">
+                                                                                                                                                                <img class="ms-Image-image ms-Image-image--cover ms-Image-image--portrait is-notLoaded is-fadeIn is-error image-502" src="https://img.freepik.com/free-vector/abstract-blue-geometric-shapes-background_1035-17545.jpg?w=2000" alt>
+                                                                                                                                                            </div>
+                                                                                                                                                        </div>
+                                                                                                                                                    </div>
+                                                                                                                                                </div>
+                                                                                                                                            </li>
+                                                                                                                                            <li class="y-layoutList--item item-725">
+                                                                                                                                                <div class="avatar-726">
+                                                                                                                                                    <div role="presentation" class="ms-Persona-coin ms-Persona--size24 coin-156">
+                                                                                                                                                        <div role="presentation" class="ms-Persona-imageArea imageArea-728">
+                                                                                                                                                            <div class="ms-Persona-initials initials-758" aria-hidden="true">
+                                                                                                                                                                <span>N</span>
+                                                                                                                                                            </div>
+                                                                                                                                                            <div class="ms-Image ms-Persona-image image-732" style="width: 24px; height: 24px;">
+                                                                                                                                                                <img class="ms-Image-image ms-Image-image--cover ms-Image-image--portrait is-notLoaded is-fadeIn is-error image-502" src="https://img.freepik.com/free-vector/abstract-blue-geometric-shapes-background_1035-17545.jpg?w=2000" alt>
+                                                                                                                                                            </div>
+                                                                                                                                                        </div>
+                                                                                                                                                    </div>
+                                                                                                                                                </div>
+                                                                                                                                            </li>
+                                                                                                                                            <li class="y-layoutList--item item-725">
+                                                                                                                                                <div class="avatar-726">
+                                                                                                                                                    <div role="presentation" class="ms-Persona-coin ms-Persona--size24 coin-156">
+                                                                                                                                                        <div role="presentation" class="ms-Persona-imageArea imageArea-728">
+                                                                                                                                                            <div class="ms-Persona-initials initials-758" aria-hidden="true">
+                                                                                                                                                                <span>N</span>
+                                                                                                                                                            </div>
+                                                                                                                                                            <div class="ms-Image ms-Persona-image image-732" style="width: 24px; height: 24px;">
+                                                                                                                                                                <img class="ms-Image-image ms-Image-image--cover ms-Image-image--portrait is-notLoaded is-fadeIn is-error image-502" src="https://img.freepik.com/free-vector/abstract-blue-geometric-shapes-background_1035-17545.jpg?w=2000" alt>
+                                                                                                                                                            </div>
+                                                                                                                                                        </div>
+                                                                                                                                                    </div>
+                                                                                                                                                </div>
+                                                                                                                                            </li>
+                                                                                                                                        </ul>
+                                                                                                                                    </span>
+                                                                                                                                </div>
+                                                                                                                                <div class="ms-StackItem css-734">
+                                                                                                                                    <div class="y-block block-735">
+                                                                                                                                        <div class="inner-736">
+                                                                                                                                            Nguyen Quang Huy 20226351, PHAM HUY HUNG 20198409, and Nguyen Thi Ngoc Huyen are members
+                                                                                                                                        </div>
+                                                                                                                                    </div>
+                                                                                                                                </div>
+                                                                                                                            </div>
+                                                                                                                        </div>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </a>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                        
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li></li>
+                                                                    <li></li>
+                                                                    <li></li>
+                                                                    <li></li>
+                                                                    <li></li>
+                                                                    <li></li>
+                                                                    <li></li>
+                                                                    <li></li>
+                                                                    <li></li>
+                                                                    <li></li>
+                                                                    <li></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div> 
+        </div>
+    </div>
+    <!--**********************************
+        Main wrapper end
+    ***********************************-->
+
+    <!--**********************************
+        Scripts
+    ***********************************-->
+    <!-- Required vendors -->
+    <script src="vendor/global/global.min.js"></script>
+	<script src="vendor/bootstrap-select/dist/js/bootstrap-select.min.js"></script>
+    <script src="js/custom.min.js"></script>
+    <script src="js/dlabnav-init.js"></script>
+    <!--removeIf(production)-->
+
+	<!-- Svganimation scripts -->
+    <script src="vendor/svganimation/vivus.min.js"></script>
+    <script src="vendor/svganimation/svg.animation.js"></script>
+    <script src="js/styleSwitcher.js"></script>
+	
+    <script src="vendor/jqueryui/js/jquery-ui.min.js"></script>
+    <script src="vendor/moment/moment.min.js"></script>
+
+    <script src="vendor/fullcalendar/js/fullcalendar.min.js"></script>
+    <script src="js/plugins-init/fullcalendar-init.js"></script>
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+</html>
